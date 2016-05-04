@@ -1,1 +1,5 @@
-echo "The pipeline is working!"
+echo "Starting pipeline"
+
+node {
+	gradle 'clean test'
+}
