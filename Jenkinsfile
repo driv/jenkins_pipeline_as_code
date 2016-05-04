@@ -3,6 +3,7 @@ echo "Starting pipeline"
 stage 'Compilation'
 
 node {
+	sh 'ls'
 	dir ('api'){
 		sh 'pwd'
 		sh 'ls'
