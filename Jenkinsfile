@@ -1,5 +1,11 @@
 echo "Starting pipeline"
 
+stage 'Checkout'
+
+node {
+	checkout scm
+}
+
 stage 'Compilation'
 
 node {
